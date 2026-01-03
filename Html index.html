@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pizza Extreme</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffeb3b; /* Yellow background as per image */
+            margin: 0;
+            padding: 0;
+            color: #7f0000; /* Dark red text */
+            text-align: center;
+        }
+        header {
+            background-color: #007500; /* Dark green circle edge */
+            padding: 20px 0;
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        header span.pizza {
+            font-style: italic;
+            font-size: 24px;
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #7f0000;
+            background: #ffeb3b;
+            padding: 0 10px;
+            border-radius: 5px;
+        }
+        header div.extreme {
+            background-color: #7f0000;
+            display: inline-block;
+            padding: 5px 30px;
+            font-family: 'Impact', sans-serif;
+            font-size: 40px;
+            letter-spacing: 3px;
+            box-shadow: inset 0 -4px 0 0 #ffeb3b;
+            color: white;
+            margin-top: 40px;
+            border-radius: 4px;
+        }
+        .menu-container {
+            max-width: 1000px;
+            margin: 0 auto 30px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .menu-item {
+            background-color: #7f0000;
+            color: #ffeb3b;
+            padding: 15px 25px;
+            border-radius: 6px;
+            width: 180px;
+            font-weight: bold;
+            font-size: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .menu-item b {
+            display: block;
+            font-size: 30px;
+            margin-top: 8px;
+        }
+        .pizza-images {
+            max-width: 1000px;
+            margin: 0 auto 40px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .pizza-card {
+            width: 180px;
+            text-align: center;
+        }
+        .pizza-card img {
+            width: 180px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+        .pizza-card .description {
+            background-color: #7f0000;
+            color: #ffeb3b;
+            padding: 10px;
+            border-radius: 6px;
+            margin-top: 8px;
+            font-weight: bold;
+            font-size: 18px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+        footer {
+            background-color: #7f0000;
+            color: #ffeb3b;
+            padding: 12px 0;
+            font-weight: bold;
+            font-size: 16px;
+            box-shadow: inset 0 3px 0 0 #ffeb3b;
+        }
+        @media(max-width: 650px){
+            .menu-container, .pizza-images {
+                flex-direction: column;
+                align-items: center;
+            }
+            .menu-item, .pizza-card {
+                width: 90%;
+                max-width: 300px;
+            }
+            header div.extreme {
+                font-size: 30px;
+                padding: 5px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <span class="pizza">Pizza</span>
+        <div class="extreme">EXTREME</div>
+    </header>
+    <section class="menu-container" aria-label="Pizza sizes and prices">
+        <div class="menu-item" tabindex="0">
+            Small<br /><b>Rs.400</b>
+        </div>
+        <div class="menu-item" tabindex="0">
+            Regular<br /><b>Rs.800</b>
+        </div>
+        <div class="menu-item" tabindex="0">
+            Large<br /><b>Rs.1300</b>
+        </div>
+        <div class="menu-item" tabindex="0">
+            Jumbo<br /><b>Rs.1500</b>
+        </div>
+    </section>
+    <section class="pizza-images" aria-label="Pizza combo offers">
+        <div class="pizza-card">
+            <img src="https://i.imgur.com/AjYx1us.jpg" alt="3 Small Pizzas" />
+            <div class="description">3 Small Pizza<br />1150/-</div>
+        </div>
+        <div class="pizza-card">
+            <img src="https://i.imgur.com/FiOJKog.jpg" alt="2 Regular Pizzas" />
+            <div class="description">2 Regular Pizza<br />1500/-</div>
+        </div>
+        <div class="pizza-card">
+            <img src="https://i.imgur.com/qqniWF5.jpg" alt="2 Large Pizzas" />
+            <div class="description">2 Large Pizza<br />2400/-</div>
+        </div>
+        <div class="pizza-card">
+            <img src="https://i.imgur.com/zQXZvPw.jpg" alt="2 Jumbo Pizzas" />
+            <div class="description">2 Jumbo Pizza<br />2800/-</div>
+        </div>
+    </section>
+    <footer>
+        &copy; 2024 Pizza Extreme. All Rights Reserved.
+    </footer>
+</body>
+</html>
